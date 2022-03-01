@@ -12,21 +12,15 @@ Nmap scan results for each machine reveal the below services and OS details:
 ```bash
 $ nmap -sV 192.168.1.110  
 ```
-![](Images/Project3NmapScan.png)  
+![](Images/Project3NmapScan.png)   
 This scan identifies the services below as potential points of entry:
 - Target 1
-  - List of Exposed Ports
-    22/tcp
-    80/tcp
-    111/tcp
-    139/tcp
-    445/tcp
-  - Exposed Services      VERSION
-    open ssh              OpenSSH 6.7p1 Debian 5+deb8u4
-    open http             Apache httpd 2.4.10 ((Debian))
-    open rpcbind          2-4 (RPC #100000)
-    open netbios-ssn      Samba smbd 3.X - 4.X (workgroup: WORKGROUP) 
-    open netbios-ssn      Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+    22/tcp          open ssh         OpenSSH 6.7p1 Debian 5+deb8u4 
+    80/tcp          open http        Apache httpd 2.4.10 ((Debian))
+    111/tcp         open rpcbind     2-4 (RPC #100000)
+    139/tcp         open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP) 
+    445/tcp         open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP) 
+
 _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
 The following vulnerabilities were identified on each target:
