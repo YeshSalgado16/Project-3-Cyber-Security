@@ -6,7 +6,6 @@
 - Exploitation
 
 ### Exposed Services
-_TODO: Fill out the information below._
 
 Nmap scan results for each machine reveal the below services and OS details:
 ```bash
@@ -21,34 +20,27 @@ This scan identifies the services below as potential points of entry:
   - 139/tcp         open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP) 
   - 445/tcp         open netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP) 
 
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
 The following vulnerabilities were identified on each target:
 - Target 1
-  - List of
-    open port 22 ssh
-  - Critical
-    high
-  - Vulnerabilities
-    weak passwords were exploited; such as Michael's password being michael and Steven's password being easily cracked by John The Ripper. 
-    Identified the users Michael and Steven
-    Michael contained the same password as username
-    MySQL Server login contained the login credentials in wp-config.php file in plain text. 
-    The user Steven was able to execute python code to escalate his priveleges to root.
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities.
+  - Critical Vulnerability 1: Weak password was exploited; such as Michael's password being michael and Steven's password being easily cracked by John The Ripper. 
+  - Critical Vulnerability 2: Identified the users Michael and Steven
+  - Critical Vulnerability 3: Michael contained the same password as username
+  - Critical Vulnerability 4: MySQL Server login contained the login credentials in wp-config.php file in plain text. 
+  - Critical VUlnerability 5: The user Steven was able to execute python code to escalate his priveleges to root.
 
 ### Exploitation
-_TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: _TODO: Insert `flag1.txt` hash value_
+  - `flag1.txt`: b9bbcb33e11b80be759c4e844862482d
 ![](Images/Flag1ScreenShot.png)
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_ 
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+      - viewing the page source code, then guessing Michael's password, then ssh into the user Michael.  
+      - cat service.html | grep flag1 
+  - `flag2.txt`: fc3fd58dcdad9ab23faca6e9a36e581c
 ![](Images/Flag2ScreenShot.png)
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - Guessed Michael's password is the same as username and ssh into the server. 
+      - ssh into michael@192.168.1.110 and used password: michael 
+      
