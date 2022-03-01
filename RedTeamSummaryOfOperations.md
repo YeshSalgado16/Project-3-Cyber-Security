@@ -11,7 +11,7 @@ _TODO: Fill out the information below._
 Nmap scan results for each machine reveal the below services and OS details:
 ![](Images/Project3NmapScan.png)
 ```bash
-$ nmap ... # TODO: Add command to Scan Target 1
+$ nmap ...### TODO: Add command to Scan Target 1
   # TODO: Insert scan output
 ``` nmap -sV 192.168.1.110 
 
