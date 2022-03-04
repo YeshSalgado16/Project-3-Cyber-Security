@@ -35,9 +35,15 @@ You must inspect your traffic capture to answer the following questions:
     
 2. What is the username of the Windows user whose computer is infected?
     - matthijs.devries
+
+![](Images/MattijsUsername.png)
+
 3. What are the IP addresses used in the actual infection traffic?
     - 172.16.4.205 and 185.243.115.84
-4. As a bonus, retrieve the desktop background of the Windows host.
+
+![](Images/InfectedPacket.png)
+
+
 
 ---
 
@@ -48,5 +54,9 @@ You must inspect your traffic capture to answer the following questions:
     - Windows username: elmer.blanco
     - OS version: BLANCO-DESKTOP$
 
+![](Images/elmerusername.png)
+
 2. Which torrent file did the user download?
     - Betty_Boop_Rhythm_on_the_Reservation.avi.torrent
+
+![](Images/TorrentDownload.png)
